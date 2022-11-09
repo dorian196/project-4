@@ -7,10 +7,39 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.text-citation p {
+    font-size: 25px;
+}
+
+.text-size {
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.no-point {
+    list-style-type : none;
+    margin-left: -10px;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+}
+
+.col-sm-6 img {
+    width: 90vw;
+    margin: auto;
 }
 
 a:hover {
@@ -574,6 +603,7 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
     margin: 0 auto;
+    width: 500px;
 }
 
 .lightbox-caption {
@@ -702,6 +732,9 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px 0 10px;
 }
 
 h2 {
