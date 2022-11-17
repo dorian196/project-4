@@ -6,18 +6,34 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+/* Typographie */
 .text-citation p {
     font-size: 25px;
+}
+
+/* Contraste */
+.contraste {
+    text-shadow: 0 0 5px #000000;
+}
+
+.contraste2 {
+    color: rgb(255, 255, 255)!important;
+    text-shadow: 0 0 10px #000000;
 }
 
 .text-size {
     font-size: 15px;
 }
+/* End Typographie */
 
+/* Footer */
 .footer {
     display: flex;
     justify-content: center;
+}
+
+.footer li a:hover {
+    text-decoration: underline;
 }
 
 .footer-center {
@@ -30,6 +46,8 @@ body {
     list-style-type : none;
     margin-left: -10px;
 }
+
+/* End footer */
 
 a,
 button {
@@ -391,6 +409,11 @@ a:hover {
     z-index: 2;
 }
 
+.site-navigation li a:hover {
+    border-bottom: 3px solid #F3976C;
+    transition: all 0s;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -681,7 +704,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -735,6 +758,11 @@ p {
     display: flex;
     justify-content: center;
     padding: 0 10px 0 10px;
+}
+
+.social a:hover {
+    transform: scale(1.5);
+    transition: all 1s;
 }
 
 h2 {
@@ -792,7 +820,11 @@ h4 {
 
 .bold-link {
     font-weight: 900;
+}
+
+.bold-link:hover {
     text-decoration: underline!important;
+    transition: all 1s;
 }
 
 .bgc-white {
@@ -808,21 +840,28 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFA66C!important;
+}
+
+.tc-white1 {
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #3d3636!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
+    transform: scale(1.5);
+    transition: all 1.5s;
 }
 
 .ltc-white {
     color: #FFFFFF!important;
+    text-decoration: none;
 }
 
 .ltc-white:hover {
@@ -881,13 +920,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -905,10 +944,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -917,8 +953,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
