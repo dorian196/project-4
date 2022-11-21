@@ -781,6 +781,7 @@ h3 {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
+    display: flex; 
 }
 
 h1 {
@@ -961,6 +962,12 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+
+    .med-width-whitespace {
+        display: flex;
+        flex-direction: column;
+    }
+
     h1,
     h2,
     h3,
