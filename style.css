@@ -26,6 +26,10 @@ body {
 }
 /* End Typographie */
 
+.text_transparent {
+    color: transparent;
+}
+
 /* Footer */
 .footer {
     display: flex;
